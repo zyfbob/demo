@@ -3,6 +3,7 @@ package com.yunfeng.testspring.safe;
 import sun.misc.Unsafe;
 
 import java.lang.reflect.Field;
+import java.time.LocalDate;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -20,6 +21,8 @@ public class safe {
         executorService.shutdown();
         executorService.awaitTermination(1, TimeUnit.HOURS);
         System.out.println(counter.getCount());
+        System.out.println(LocalDate.now().minusDays(7));
+        //System.out.println(0/0);
     }
 
     public static Unsafe getUnsafe() throws NoSuchFieldException, IllegalAccessException {
