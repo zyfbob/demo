@@ -19,6 +19,7 @@ public class Main1 {
             Thread.sleep(100);
         } catch (InterruptedException e) {
         }
+        System.out.println("===");
         return "601857";
     }
 
@@ -27,7 +28,12 @@ public class Main1 {
             Thread.sleep(100);
         } catch (InterruptedException e) {
         }
+        System.out.println("----");
+        int c=  7/0;
+
         return 5 + Math.random() * 20;
+
+
     }
     }
 

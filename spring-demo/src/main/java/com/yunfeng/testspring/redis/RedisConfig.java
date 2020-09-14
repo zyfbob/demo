@@ -32,7 +32,6 @@ public class RedisConfig {
         @Override
         public void onMessage(Message message, byte[] bytes) {
             byte[] body = message.getBody();
-
             System.out.println("Spring......"+message);
         }
     }
